@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Assignment</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="light-blue accent-4">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Simple producer-consumer problem</a>
+    </div>
+  </nav>
+  </header>
+
+  <div class="container">
+    <div class="row content">
+      <!-- LEFT PANEL -->
+      <div class="col s3 sidebar">
+        <div class="row left-panel ">
+          <div class="col s6">
+            <button class="btn custom-btn" onclick="prodItems()">Produce</button>
+            <button class="btn custom-btn" onclick="consItems()">Consume</button>
+          </div>
+        </div>
+      </div>
+      <!-- RIGHT PANEL -->
+      <div class="col s8">
+        <div class="row right-panel">
+          <div class="col s5 items z-depth-5">
+            <h4>Items Produced</h4>
+            <ul id="pItem">
+
+            </ul>
+          </div>
+          <div class="col s5 items z-depth-5">
+            <h4>Items Consumed</h4>
+            <ul id="cItem">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row z-depth-5" id="buffer">
+      <div  id="buffers[0]"></div>
+      <div id="buffers[1]"></div>
+      <div id="buffers[2]"></div>
+      <div id="buffers[3]"></div>
+      <div id="buffers[4]"></div>
+      <div id="buffers[5]"></div>
+      <div id="buffers[6]"></div>
+      <div id="buffers[7]"></div>
+      <div id="buffers[8]"></div>
+      <div id="buffers[9]"></div>
+    </div>
+
+  </div>
+
+
+  <!-- ==========JavaScript Section======== -->
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
